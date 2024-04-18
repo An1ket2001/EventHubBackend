@@ -16,7 +16,7 @@ app.use("/api/auth",authRoutes);
 
 
 
-mongoose.connect(`${process.env.P_MONGO_URI }`).then(() => {
+mongoose.connect(`mongodb+srv://aniket:chotu@cluster0.x6e7vlw.mongodb.net/eventhub?retryWrites=true&w=majority&appName=Cluster0`).then(() => {
     app.listen(5000, (err) => {
         if (!err) {
             console.log("server running at port 5000");
