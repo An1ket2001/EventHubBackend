@@ -29,7 +29,7 @@ jobs:
         run: |  
           cd backend  
           npm install -g nodemon  
-          nodemon app.js  
+          nodemon server.js  
         
       - name: Upload artifact for deployment job  
         uses: actions/upload-artifact@v3  
